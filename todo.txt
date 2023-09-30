@@ -1,0 +1,2 @@
+1. Create getAccount() in cmdClass.py
+2. Create regex for command input
