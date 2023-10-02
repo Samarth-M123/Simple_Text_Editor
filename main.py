@@ -5,10 +5,12 @@ mainObject = cmdClass()
 while True:
     try:
         command = str(input(f"${mainObject.getAccount()}: "))
+        if re.search('', command) != True:
+            raise ValueError
     except FileNotFoundError as e:
-        print(f"{e}: Your parameter (file-name) was invalid")
-        mainObject.exit()
+        mainObject.exit(f"{e}: Your parameter (file-name) was invalid")
     except ValueError as e:
-        print(f"{e}: You gave input of wrong datatype")
+        mainObject.exit(f"{e}: Your input was invalid")
+    
     
     
