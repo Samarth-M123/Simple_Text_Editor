@@ -5,14 +5,14 @@ class Cmd:
         self.account = input("Account Name: ")
     def create(self, fileName):
         file = open(f"{self.account}_{fileName}", 'x')
-    def programExit(self, exitMessage):
+    def programExit(self, exitMessage=None):
         exit(exitMessage)
     def kill(self, fileName):
         os.remove(fileName)
     def fileOpen(self, fileName):
         with open(fileName, 'a+') as file:
             for i in file.readlines():
-                print i
+                print(i)
             lineNum = 0
             while True:
                 lineNum += 1
