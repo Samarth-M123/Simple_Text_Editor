@@ -10,6 +10,16 @@ class Cmd:
     def kill(self, fileName):
         os.remove(fileName)
     def fileOpen(self, fileName):
-        pass
+        with open(fileName, 'a+') as file:
+            for i in file.readlines():
+                print i
+            lineNum = 0
+            while True:
+                lineNum += 1
+                line = input(f"{lineNum} ")
+                if line != "q\?":
+                    file.write(line)
+                else:
+                    break
     def getAccount(self):
         return self.account
