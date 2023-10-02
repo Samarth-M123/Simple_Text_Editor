@@ -11,3 +11,5 @@ class Cmd:
         os.remove(fileName)
     def open(self, fileName):
         pass
+    def getAccount(self):
+        return self.account
