@@ -1,5 +1,6 @@
 import cmdClass
 import re
+import os
 
 mainObject = cmdClass()
 while True:
@@ -27,6 +28,3 @@ while True:
         mainObject.fileOpen(parameter)
     elif command == "exit":
         mainObject.programExit()
-    
-    
-    
