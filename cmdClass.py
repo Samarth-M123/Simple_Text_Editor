@@ -9,3 +9,5 @@ class Cmd:
         exit()
     def kill(self, fileName):
         os.remove(fileName)
+    def open(self, fileName):
+        pass
