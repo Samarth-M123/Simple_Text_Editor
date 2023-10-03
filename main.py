@@ -7,7 +7,7 @@ while True:
     try:
         userInput = str(input(f"${mainObject.getAccount()}: "))
         matches = re.search(r'^^(create|open|kill|exit) -(?:\s+([^\s]+))?$', userInput)
-        if matches != True:
+        if matches is None:
             raise ValueError
         else:
             command = matches.group(1)
