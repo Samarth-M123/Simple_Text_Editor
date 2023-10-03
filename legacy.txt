@@ -1,0 +1,2 @@
+This is just a note telling you that although I didn't want to delete the branch, because it is my first every proper project,
+it is no longer in use and I am terming it a legacy branch.
