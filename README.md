@@ -10,3 +10,6 @@ It utilizes a basic custom command-promt with the following commands:
 On opening the program, the command-line asks the user for his/her name, and adds it as a prefix to any and all filenames.
 Following that, the command-line will begin with '$[insert-name]:'
 The text editor will be somewhat similar to Vim.
+
+
+IMPORTANT: Currently, whenever a command is run, a value error is raised. Please fork this repository and fix any error you see before issuing a pull request. Thank you.
