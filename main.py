@@ -6,7 +6,7 @@ mainObject = Cmd()
 while True:
     try:
         userInput = str(input(f"${mainObject.getAccount()}: "))
-        matches = re.search(r'^^(create|open|kill|exit) -(?:\s+([^\s]+))?$', userInput)
+        matches = re.search(r'^(create|open|kill|exit) *-?(\s+-([^\s]+))?$', userInput)
         if matches is None:
             raise ValueError
         else:
