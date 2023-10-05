@@ -12,4 +12,4 @@ Following that, the command-line will begin with '$[insert-name]:'
 The text editor will be somewhat similar to Vim.
 
 
-IMPORTANT: Currently, whenever a command is run, a value error is raised. Please fork this repository and fix any error you see before issuing a pull request. Thank you.
+IMPORTANT: The only known bug is that the old content of the file doesn't appear when the open command is run.
