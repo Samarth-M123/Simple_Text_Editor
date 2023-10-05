@@ -11,14 +11,15 @@ class Cmd:
         os.remove(fileName)
     def fileOpen(self, fileName):
         with open(fileName, 'a+') as file:
-            for i in file.readlines():
-                print(i)
             lineNum = 0
+            for i in file.readlines():
+                lineNum += 1
+                print(f"{lineNum} {i}")
             while True:
                 lineNum += 1
                 line = input(f"{lineNum} ")
                 if line != "q\?":
-                    file.write(line)
+                    file.write(f"{line}\n")
                 else:
                     break
     def getAccount(self):
