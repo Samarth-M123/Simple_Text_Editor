@@ -12,4 +12,4 @@ Following that, the command-line will begin with '$[insert-name]:'
 The text editor will be somewhat similar to Vim.
 
 
-IMPORTANT: The only known bug is that the old content of the file doesn't appear when the open command is run.
+IMPORTANT: The only known bug is that the old content of the file doesn't appear when the open command is run. `lineNum` has been adjusted to add line numbers to previously existing content as well.
